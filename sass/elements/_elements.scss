@@ -37,8 +37,24 @@ figure {
 	text-align: center;
 	color:$white;
 	padding: 5px 10px;
+	font-size: 16px;
 }
 #banner{
+	background: url("images/headerwithlines.png");
+	max-height: 150px;
+	background-repeat: repeat-x;
+	background-size: contain;
 
+	a{
+		width: 78%;
+		display: block;
+		margin: 25px auto;
+		text-align: center;
+
+		img{
+			max-width: 100%;
+			display: inline;
+		}
+	}
 }
 
