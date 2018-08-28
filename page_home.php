@@ -1,16 +1,11 @@
 <?php
 /**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * Template Name: Home
+ * The template for home page
  *
  * @package sahlems
  */
+
 get_header();
 ?>
 <?php get_template_part('template-parts/content', 'banner'); ?>
@@ -32,8 +27,10 @@ get_header();
         </div><!-- #primary -->
     </section>
     <section>
-	    <?php get_template_part('template-parts/content', 'section-2'); ?>; ?>
+		<?php get_template_part('template-parts/content', 'why-us'); ?>
     </section>
-    <section class="pre-footer"></section>
+    <section class="pre-footer">
+	    <?php get_template_part('template-parts/content', 'pre-footer'); ?>
+    </section>
 <?php
 get_footer();

@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
@@ -31,8 +31,11 @@
     <header id="masthead" class="site-header ">
         <div id="top-bar">
             <div class="container">
-                2260 Southwestern Blvd., West Seneca, NY 14224 <span>|</span> Phone: (716) 662-0062 <span>|</span> Fax:
-                716-662-5743 <span>|</span> Office Hours: Monday - Friday 8:00 am - 5:00 pm
+                <div>2260 Southwestern Blvd., West Seneca, NY 14224</div>
+                <span>|</span>
+                <div>Phone: (716) 662-0062</div>
+                <span>|</span> <div>Fax:716-662-5743</div>
+                <span>|</span> <div>Office Hours: Monday - Friday 8:00 am - 5:00 pm</div>
             </div>
         </div>
         <div class="site-branding" id="banner">
@@ -58,4 +61,4 @@
             </div>
         </nav><!-- #site-navigation -->
     </header><!-- #masthead -->
-    <div id="content" class="site-content container">
+    <div id="content" class="site-content">
