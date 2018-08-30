@@ -85,23 +85,24 @@ figure {
 
 section.banner {
   min-height: 500px;
+  margin-bottom: 200px;
 
   div.cta {
     position: relative;
-    @media only screen and (max-width: 479px){
+    @media only screen and (max-width: 479px) {
       top: 60px;
       width: 90%;
       font-size: 24px;
     }
-    @media only screen and (max-width: 767px){
+    @media only screen and (max-width: 767px) {
       top: 60px;
       width: 80%;
       font-size: 30px;
     }
     @media only screen and (min-width: 768px) {
       top: 120px;
-      width: 50%;
-      left:50px;
+      width: 530px;
+      left: 50px;
       margin-bottom: 100px;
       font-size: 36px;
     }
@@ -109,19 +110,20 @@ section.banner {
       font-family: Oswald;
       text-transform: uppercase;
       list-style: none;
-      @media only screen and (max-width: 479px){
+      margin: 0 0 1.5em 0;
+      @media only screen and (max-width: 479px) {
         margin: 0 auto;
         li {
-          padding: 0 20px ;
+          padding: 0 20px;
           line-height: 1.5;
           background: rgba($white, 0.8);
           color: $blue;
           border-left: $blue 5px solid;
           display: block;
-          &:nth-child(3){
+          &:nth-child(3) {
             padding-bottom: 30px;
           }
-          &:first-child{
+          &:first-child {
             padding-top: 30px;
           }
           &:last-child {
@@ -131,25 +133,25 @@ section.banner {
             text-align: center;
             border-left: $white 5px solid;
             font-size: 20px;
-            strong{
+            strong {
               font-size: 24px;
             }
           }
         }
       }
-      @media only screen and (max-width: 767px){
+      @media only screen and (max-width: 767px) {
         margin: 0 auto;
         li {
-          padding: 0 20px ;
+          padding: 0 20px;
           line-height: 1.5;
           background: rgba($white, 0.8);
           color: $blue;
           border-left: $blue 5px solid;
           display: block;
-          &:nth-child(3){
+          &:nth-child(3) {
             padding-bottom: 30px;
           }
-          &:first-child{
+          &:first-child {
             padding-top: 30px;
           }
           &:last-child {
@@ -159,25 +161,25 @@ section.banner {
             text-align: center;
             border-left: $white 5px solid;
             font-size: 30px;
-            strong{
+            strong {
               font-size: 36px;
             }
           }
         }
       }
-      @media only screen and (min-width: 768px){
+      @media only screen and (min-width: 768px) {
         li {
-          padding: 0 50px ;
+          padding: 0 30px;
           line-height: 1.5;
           background: rgba($white, 0.8);
           color: $blue;
           border-left: $blue 5px solid;
           display: block;
           letter-spacing: 1px;
-          &:nth-child(3){
+          &:nth-child(3) {
             padding-bottom: 30px;
           }
-          &:first-child{
+          &:first-child {
             padding-top: 30px;
           }
           &:last-child {
@@ -187,7 +189,7 @@ section.banner {
             text-align: center;
             border-left: $white 5px solid;
             font-size: 30px;
-            strong{
+            strong {
               font-size: 36px;
             }
           }
@@ -209,5 +211,150 @@ section.banner {
     }
   }
 
+  #service-boxes {
+    margin: 75px auto 0;
+    position: relative;
+    top: 80px;
+    div {
+      a {
+        display: block;
+        background: $white;
+        height: 150px;
+        margin: 10px 5px;
+        padding: 5px;
+        img {
+
+        }
+        span {
+          display: block;
+          color: $white;
+          background: $red;
+          width: 100%;
+          text-align: center;
+          text-transform: uppercase;
+          padding: 10px 5px;
+          font-size: 16px;
+          font-weight: 700;
+        }
+
+      }
+    }
+  }
+
 }
 
+section.why-us {
+  padding: 60px 40px;
+  #why-us {
+    background: rgba($white, 0.8);
+    padding: 20px;
+    width: 60%;
+
+    .col-xs-2 {
+      text-align: center;
+      min-height: 50px;
+    }
+
+    .col-xs-10 {
+      padding: 10px;
+      min-height: 50px;
+      b {
+        display: block;
+      }
+    }
+  }
+}
+
+section.pre-footer {
+  .row {
+    margin: 100px auto;
+  }
+  .col-md-4 {
+    text-align: center;
+    h3 {
+      font-size: 36px;
+      margin-top: 0;
+      padding-top: 20px;
+    }
+    .btn {
+      margin-top: -24px;
+      font-size: 16px;
+      padding: 5px 10px;
+    }
+    .btn-primary {
+      background: $blue;
+    }
+    .btn-danger {
+      background: $red;
+    }
+    .widget-content {
+      padding-bottom: 10px;
+      -webkit-box-shadow: 10px 10px 47px -13px rgba(0, 0, 0, 0.42);
+      -moz-box-shadow: 10px 10px 47px -13px rgba(0, 0, 0, 0.42);
+      box-shadow: 10px 10px 47px -13px rgba(0, 0, 0, 0.42);
+
+      p {
+        padding: 10px 5px;
+      }
+    }
+  }
+}
+
+.site-footer {
+  background: $red;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  h2, h3, h4, a {
+    color: $white;
+    &:hover {
+      color: $white;
+    }
+  }
+  i {
+    font-size: 55px;
+    padding: 15px;
+  }
+  img {
+    height: 50px;
+  }
+  p {
+    padding: 15px 0 0;
+  }
+}
+
+.widget-area {
+  .wpforms-widget {
+    color: $white;
+    background: $blue;
+
+    .wpforms-head-container {
+      background: $red !important;
+      padding: 10px 15px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .wpforms-field-container {
+      padding: 20px 30px;
+      font-size: 14px;
+      label {
+        text-transform: uppercase;
+        font-weight: normal;
+      }
+    }
+    .wpforms-submit-container {
+      text-align: right !important;
+      button {
+        font-size: 20px !important;
+        background-color: $red !important;
+        color: $white !important;
+        display: inline-block;
+        text-transform: uppercase !important;
+        padding: 10px 20px !important;
+        margin: 0 30px 20px !important;
+      }
+    }
+  }
+}

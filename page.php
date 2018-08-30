@@ -13,7 +13,6 @@
  */
 get_header();
 ?>
-<?php get_template_part('template-parts/content', 'banner'); ?>
     <section class="container">
         <div id="primary" class="content-area row">
             <main id="main" class="site-main col-sm-6">
@@ -28,12 +27,9 @@ get_header();
 				endwhile; // End of the loop.
 				?>
             </main><!-- #main -->
-            <div class="col-sm-6"><?php get_sidebar(); ?></div>
+        <div class="col-sm-6"><?php get_sidebar(); ?></div>
         </div><!-- #primary -->
     </section>
-    <section>
-	    <?php get_template_part('template-parts/content', 'section-2'); ?>; ?>
-    </section>
-    <section class="pre-footer"></section>
 <?php
+get_template_part('template-parts/content', 'pre-footer');
 get_footer();
