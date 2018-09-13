@@ -243,9 +243,9 @@ section.banner {
 
 }
 
-section.why-us {
+section.why-us, section.section-2, section.has-background {
   padding: 60px 40px;
-  #why-us {
+  #why-us, #section-2-content, .section-content  {
     background: rgba($white, 0.8);
     padding: 20px;
     width: 60%;
@@ -263,6 +263,12 @@ section.why-us {
       }
     }
   }
+}
+
+section.section-2{}
+section.section-3,section.section-4,section.section-5{
+  padding: 60px 40px;
+  border-bottom: solid 2px #ccc;
 }
 
 section.pre-footer {
@@ -357,4 +363,12 @@ section.pre-footer {
       }
     }
   }
+}
+.page-title{
+  width: 100%;
+  color: white;
+  background: $blue;
+  text-align: center;
+  margin: 0 auto 40px;
+  padding: 20px 0px;
 }
