@@ -7,8 +7,14 @@
  * @package sahlems
  */
 ?>
-<section class="section-2" style="background: url('<?php the_field('section_2_background'); ?>');">
-    <div>
-		<?php the_field('section_2'); ?>
-    </div>
-</section>
+<?php for ($i = 2; $i <= 7; $i++): ?>
+<?php if(!empty(get_field("section_{$i}_content"))):?>
+    <section class="section-<?= $i; ?> <?= !empty(get_field("section_{$i}_background")) ? "has-background": "";?>" style="background: url('<?php the_field("section_{$i}_background"); ?>');background-repeat: no-repeat;background-size:cover">
+        <div class="container">
+            <div id="section-<?= $i; ?>-content" class="section-content">
+				<?= the_field("section_{$i}_content"); ?>
+            </div>
+        </div>
+    </section>
+    <?php endif;?>
+<?php endfor; ?>

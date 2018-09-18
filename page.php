@@ -13,9 +13,11 @@
  */
 get_header();
 ?>
+    <h1 class="page-title"><?= the_title();?></h1>
     <section class="container">
         <div id="primary" class="content-area row">
-            <main id="main" class="site-main col-sm-6">
+            <!--<main id="main" class="site-main col-sm-6">-->
+            <main id="main" class="site-main col-sm-12">
 				<?php
 				while (have_posts()) :
 					the_post();
@@ -27,9 +29,12 @@ get_header();
 				endwhile; // End of the loop.
 				?>
             </main><!-- #main -->
-        <div class="col-sm-6"><?php get_sidebar(); ?></div>
+            <!--<div class="col-sm-6"><?php //get_sidebar(); ?></div>-->
         </div><!-- #primary -->
     </section>
 <?php
-get_template_part('template-parts/content', 'pre-footer');
+get_template_part('template-parts/content', 'section-2');
+if(!empty(get_field("pre_footer_content"))) {
+	get_template_part('template-parts/content', 'pre-footer');
+}
 get_footer();
