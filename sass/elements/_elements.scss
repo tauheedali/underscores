@@ -33,7 +33,13 @@ figure {
 }
 
 @import "tables";
-
+@media screen and (max-width: 960px){
+  #top-bar{
+    .container{
+      margin-top:40px;
+    }
+  }
+}
 #top-bar {
   background-color: $color__background-top-bar;
   text-align: center;
@@ -89,17 +95,17 @@ section.banner {
 
   div.cta {
     position: relative;
-    @media only screen and (max-width: 479px) {
+    @media  screen and (max-width: 479px) {
       top: 60px;
       width: 90%;
       font-size: 24px;
     }
-    @media only screen and (max-width: 767px) {
+    @media screen and (min-width:480px) and (max-width: 767px) {
       top: 60px;
       width: 80%;
       font-size: 30px;
     }
-    @media only screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
       top: 120px;
       width: 530px;
       left: 50px;
@@ -238,6 +244,11 @@ section.banner {
         }
 
       }
+      @media screen and (max-width: 600px){
+        a{
+          height: auto;
+        }
+      }
     }
   }
 
@@ -245,11 +256,7 @@ section.banner {
 
 section.why-us, section.section-2, section.has-background {
   padding: 60px 40px;
-  @media (max-width: 600px) {
-    #why-us, #section-2-content, .section-content{
-      width: 100%;
-    }
-  }
+
   #why-us, #section-2-content, .section-content  {
     background: rgba($white, 0.8);
     padding: 20px;
@@ -266,6 +273,11 @@ section.why-us, section.section-2, section.has-background {
       b {
         display: block;
       }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    #why-us, #section-2-content, .section-content{
+      width: 100%;
     }
   }
 }
